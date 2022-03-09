@@ -12,56 +12,70 @@ body {
   font-family: poppins !important;
 }
 
+body p {
+  font-weight: 300;
+}
+
 header {
   height: 80px;
 }
 
-header .navbar-brand {
+header .navbar {
+  background-color: #0C0C0E;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header .navbar .navbar-brand {
   width: 150px;
 }
 
-header .navbar-brand img {
+header .navbar .navbar-brand img {
   width: 100%;
 }
 
-header .navbar-collapse {
+header .navbar .navbar-collapse {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
 
-header ul {
+header .navbar ul {
   list-style: none;
   font-weight: 200;
   text-transform: uppercase;
   font-family: jost;
 }
 
-header ul li {
+header .navbar ul li {
   display: inline-block;
-  margin: 0px 20px;
+  margin: 0px 5px;
 }
 
-header ul li a {
+header .navbar ul li a {
   text-decoration: none;
   color: white;
   letter-spacing: 1px;
   font-size: 14px;
-  padding: 0 10px;
+  padding: 2px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-header ul li a:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.68)), to(rgba(255, 255, 255, 0.47)));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.47) 100%);
+header .navbar ul li a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 0, 136, 0.26)), to(rgba(255, 255, 255, 0.12)));
+  background: linear-gradient(180deg, rgba(137, 0, 136, 0.26) 0%, rgba(255, 255, 255, 0.12) 100%);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
   border-radius: 4px;
   color: white;
 }
 
-header ul li.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.68)), to(rgba(255, 255, 255, 0.47)));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.47) 100%);
+header .navbar ul li.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 0, 136, 0.26)), to(rgba(255, 255, 255, 0.12)));
+  background: linear-gradient(180deg, rgba(137, 0, 136, 0.26) 0%, rgba(255, 255, 255, 0.12) 100%);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
   border-radius: 4px;
@@ -70,7 +84,7 @@ header ul li.active {
 
 .banner {
   height: 709px;
-  background-image: url("./assests/bnner_background.jpg");
+  background-image: url("../assests/bnner_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -90,7 +104,11 @@ header ul li.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 709px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 600px;
 }
 
 .aboutUs {
@@ -120,12 +138,6 @@ header ul li.active {
   line-height: 29.5px;
 }
 
-.aboutUs .row .blur-effect img {
-  position: absolute;
-  top: 100px;
-  width: 100%;
-}
-
 .aboutUs .row .blur-effect .text-container {
   height: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 0, 136, 0.26)), to(rgba(255, 255, 255, 0.12)));
@@ -136,10 +148,6 @@ header ul li.active {
   border-radius: 15px;
   padding: 50px;
   margin: 80px 0;
-}
-
-.aboutUs .row .blur-effect .text-container p {
-  font-weight: 300;
 }
 
 .fancyContent {
@@ -164,12 +172,30 @@ header ul li.active {
 }
 
 .services .container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 21, 21, 0.79)), to(rgba(14, 14, 14, 0.62)));
-  background: linear-gradient(180deg, rgba(21, 21, 21, 0.79) 0%, rgba(14, 14, 14, 0.62) 100%);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 0, 136, 0.6)), to(rgba(66, 0, 200, 0.55)));
+  background: linear-gradient(180deg, rgba(137, 0, 136, 0.6) 0%, rgba(66, 0, 200, 0.55) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
   border-radius: 12px;
   color: white;
+}
+
+.services .container .row {
+  position: relative;
+}
+
+.services .container .row .introText {
+  margin-top: 30px;
+}
+
+.services .container .row .introText p {
+  width: 60%;
+}
+
+.services .container .row button {
+  position: absolute;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .services .container img {
@@ -177,8 +203,8 @@ header ul li.active {
 }
 
 .services .container .blur-effect {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.43)), to(rgba(255, 255, 255, 0.17)));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.43) 0%, rgba(255, 255, 255, 0.17) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.43)), to(rgba(255, 255, 255, 0.41)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.43) 0%, rgba(255, 255, 255, 0.41) 100%);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   border-radius: 0px 0px 10px 10px;
@@ -186,7 +212,7 @@ header ul li.active {
 
 .virualSection {
   height: auto;
-  background-image: url("./assests/background_2.png");
+  background-image: url("../assests/background_2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -211,8 +237,9 @@ header ul li.active {
 .footer {
   background-color: #0C0C0E;
   position: relative;
-  padding: 80px 0;
+  padding: 80px 0 40px 0;
   color: white;
+  font-weight: 300;
 }
 
 .footer .ellipse1 {
@@ -246,7 +273,7 @@ header ul li.active {
 }
 
 .footer .row .col img {
-  width: 250px;
+  width: 200px;
 }
 
 .footer .importantLinks ul {
@@ -270,6 +297,10 @@ header ul li.active {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
 }
 
 .footer .socialMedia .icon {
@@ -303,7 +334,7 @@ header ul li.active {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.47) 100%);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
-  border-radius: 8px;
+  border-radius: 30px !important;
 }
 
 .centermid {
@@ -340,5 +371,105 @@ header ul li.active {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+@media only screen and (max-width: 650px) {
+  .banner {
+    height: 500px;
+  }
+  .banner h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 10vw;
+    text-shadow: 7px 14px 14px rgba(0, 0, 0, 0.43);
+    opacity: 0.8;
+  }
+  .banner .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    height: 500px;
+  }
+  .aboutUs {
+    background-color: #0C0C0E;
+    position: relative;
+  }
+  .aboutUs .ellipse1 {
+    position: absolute;
+    bottom: -70px;
+    left: 185px;
+    width: 43%;
+  }
+  .aboutUs .ellipse2 {
+    position: absolute;
+    top: -10px;
+    left: 200px;
+  }
+  .aboutUs .ellipse3 {
+    position: absolute;
+    right: 112px;
+    width: 50%;
+  }
+  .aboutUs .row .blur-effect {
+    color: white;
+    line-height: 29.5px;
+  }
+  .aboutUs .row .blur-effect .text-container {
+    padding: 20px;
+    margin: 50px 0;
+  }
+  .fancyContent .button-container img {
+    position: absolute;
+    left: 70px;
+    bottom: -27px;
+    z-index: -1;
+    width: 90px;
+  }
+  .services .container .row .introText {
+    margin-top: 30px;
+  }
+  .services .container .row .introText p {
+    width: 100%;
+  }
+  .virualSection {
+    margin: 10px 0 0 0;
+  }
+  .virualSection .col p {
+    font-size: 18px;
+  }
+  .footer {
+    padding: 40px 0 40px 0;
+  }
+  .footer .ellipse1 {
+    position: absolute;
+    bottom: 119px;
+    left: 150px;
+    z-index: 1;
+    width: 50%;
+  }
+  .footer .ellipse2 {
+    position: absolute;
+    top: 22px;
+    left: 215px;
+    width: 36%;
+  }
+  .footer .ellipse3 {
+    position: absolute;
+    right: 320px;
+    top: 300px;
+  }
+  .footer .row .col {
+    margin-top: 10px;
+  }
+  .footer .row .col img {
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
