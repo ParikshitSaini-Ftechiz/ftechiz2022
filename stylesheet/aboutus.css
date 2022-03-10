@@ -1,3 +1,7 @@
+body {
+  background-color: #0C0C0E;
+}
+
 header {
   background-color: #0C0C0E;
 }
@@ -62,14 +66,45 @@ header {
   font-weight: 500;
 }
 
-.whyUs hr {
-  height: 30px;
-  color: red;
-  border: 3px solid red;
+.whyUs .blurBoxEffect {
+  position: relative;
+}
+
+.whyUs .blurBoxEffect .blurBox {
+  width: 300px;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 0, 136, 0.26)), to(rgba(255, 255, 255, 0.12)));
+  background: linear-gradient(180deg, rgba(137, 0, 136, 0.26) 0%, rgba(255, 255, 255, 0.12) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 4px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+
+.whyUs .blurBoxEffect .blurBox i {
+  font-size: 150px;
+  opacity: 0.5;
+}
+
+.whyUs .blurBoxEffect img {
+  position: absolute;
+  right: 110px;
+  bottom: -50px;
+  opacity: 0.9;
 }
 
 .vision {
-  padding: 80px 0;
+  padding: 0 0 80px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -83,9 +118,78 @@ header {
   font-weight: 300;
 }
 
-.vision hr {
-  height: 30px;
-  color: red;
-  border: 3px solid red;
+.vision .blurBoxEffect {
+  position: relative;
+}
+
+.vision .blurBoxEffect .blurBox {
+  width: 300px;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 0, 136, 0.26)), to(rgba(255, 255, 255, 0.12)));
+  background: linear-gradient(180deg, rgba(137, 0, 136, 0.26) 0%, rgba(255, 255, 255, 0.12) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 4px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+
+.vision .blurBoxEffect .blurBox i {
+  font-size: 150px;
+  opacity: 0.5;
+}
+
+.vision .blurBoxEffect img {
+  position: absolute;
+  left: 110px;
+  top: -50px;
+  opacity: 0.9;
+}
+
+.mission {
+  padding: 0 0 80px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mission p {
+  font-weight: 500;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.mission hr {
+  width: 50%;
+  margin: auto;
+}
+
+.mission .blurBox {
+  width: 300px;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 0, 136, 0.26)), to(rgba(255, 255, 255, 0.12)));
+  background: linear-gradient(180deg, rgba(137, 0, 136, 0.26) 0%, rgba(255, 255, 255, 0.12) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 4px;
+  color: white;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.mission .blurBox i {
+  font-size: 150px;
+  opacity: 0.5;
+  margin: auto;
 }
 /*# sourceMappingURL=aboutus.css.map */

@@ -1,3 +1,7 @@
+body {
+    background-color: #0C0C0E;
+}
+
 header {
     background-color: #0C0C0E;
 }
@@ -59,15 +63,41 @@ header {
         font-weight: 500;
     }
 
-    hr {
-        height: 30px;
-        color: red;
-        border: 3px solid red;
+    .blurBoxEffect {
+        position: relative;
+
+        .blurBox {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(180deg, rgba(137, 0, 136, 0.26) 0%, rgba(255, 255, 255, 0.12) 100%);
+            backdrop-filter: blur(30px);
+            border-radius: 4px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+            i {
+                font-size: 150px;
+                opacity: 0.5;
+            }
+
+        }
+
+        img {
+            position: absolute;
+            right: 110px;
+            bottom: -50px;
+            opacity: 0.9;
+        }
+
     }
+
 }
 
 .vision {
-    padding: 80px 0;
+    padding: 0 0 80px 0;
     align-items: center;
 
     p {
@@ -79,9 +109,70 @@ header {
     }
 
 
-    hr {
-        height: 30px;
-        color: red;
-        border: 3px solid red;
+    .blurBoxEffect {
+        position: relative;
+
+        .blurBox {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(180deg, rgba(137, 0, 136, 0.26) 0%, rgba(255, 255, 255, 0.12) 100%);
+            backdrop-filter: blur(30px);
+            border-radius: 4px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+            i {
+                font-size: 150px;
+                opacity: 0.5;
+            }
+
+        }
+
+        img {
+            position: absolute;
+            left: 110px;
+            top: -50px;
+            opacity: 0.9;
+        }
+
     }
+}
+
+.mission {
+    padding: 0 0 80px 0;
+    align-items: center;
+
+    p {
+        font-weight: 500;
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    hr {
+        width: 50%;
+        margin: auto;
+    }
+
+    .blurBox {
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(180deg, rgba(137, 0, 136, 0.26) 0%, rgba(255, 255, 255, 0.12) 100%);
+        backdrop-filter: blur(30px);
+        border-radius: 4px;
+        color: white;
+        border-radius: 10px;
+        display: grid;
+
+
+        i {
+            font-size: 150px;
+            opacity: 0.5;
+            margin: auto;
+        }
+
+    }
+
 }

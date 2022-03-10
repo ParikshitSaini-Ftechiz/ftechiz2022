@@ -22,8 +22,6 @@ header {
 
 header .navbar {
   background-color: #0C0C0E;
-  position: fixed;
-  width: 100%;
   z-index: 10;
 }
 
