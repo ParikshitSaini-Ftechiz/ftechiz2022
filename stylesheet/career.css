@@ -1,0 +1,121 @@
+header {
+  background-color: black;
+}
+
+.career {
+  background-image: url(../assests/career.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  color: white;
+}
+
+.career h1 {
+  text-transform: uppercase;
+}
+
+.career h3 {
+  font-weight: 300;
+}
+
+.career .container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(160, 160, 160, 0.315)), to(rgba(212, 212, 212, 0.233)));
+  background: linear-gradient(180deg, rgba(160, 160, 160, 0.315) 0%, rgba(212, 212, 212, 0.233) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 8px;
+  border: 1px solid white;
+  text-align: center;
+  padding: 40px 0;
+  -webkit-box-shadow: inset -1px 1px 5px 3px rgba(51, 51, 51, 0.47);
+  box-shadow: inset -1px 1px 5px 3px rgba(53, 53, 53, 0.47);
+}
+
+.career .values {
+  padding: 40px 0;
+}
+
+.career .values .blurBox {
+  width: 300px;
+  height: 300px;
+  border-radius: 4px;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.career .values .blurBox i {
+  font-size: 150px;
+  opacity: 0.9;
+  margin: 10px auto;
+}
+
+.joinus {
+  padding: 80px 0;
+}
+
+.joinus h4 {
+  color: purple;
+  font-weight: 300;
+}
+
+.applicationForm {
+  padding: 0 0 80px 0;
+  position: relative;
+}
+
+.applicationForm img.Ellipse_3 {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+}
+
+.applicationForm img.Ellipse_1 {
+  position: absolute;
+  right: 100px;
+  bottom: 200px;
+}
+
+.applicationForm .container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(160, 160, 160, 0.315)), to(rgba(212, 212, 212, 0.233)));
+  background: linear-gradient(180deg, rgba(160, 160, 160, 0.315) 0%, rgba(212, 212, 212, 0.233) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 40px;
+  -webkit-box-shadow: inset -1px 1px 5px 3px rgba(51, 51, 51, 0.47);
+  box-shadow: inset -1px 1px 5px 3px rgba(53, 53, 53, 0.47);
+}
+
+.applicationForm .container .row p {
+  font-weight: 500;
+}
+
+.applicationForm .container .row label {
+  font-weight: 300;
+}
+
+.applicationForm .container .row input {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.68)), to(rgba(255, 255, 255, 0.47)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.47) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+
+.applicationForm .container .row textarea {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.68)), to(rgba(255, 255, 255, 0.47)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.47) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+
+.applicationForm .container .row select {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.68)), to(rgba(255, 255, 255, 0.47)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.47) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+/*# sourceMappingURL=career.css.map */

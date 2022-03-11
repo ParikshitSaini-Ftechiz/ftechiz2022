@@ -1,11 +1,8 @@
-body {
-    background: #0C0C0E !important;
-}
-
 .directors {
     color: white;
     padding: 80px 0;
     position: relative;
+    background-color: black;
 
     img.background {
         position: absolute;
@@ -23,11 +20,6 @@ body {
 
 
     .imageContainer {
-        // width: 250px;
-        // height: 250px;
-        // border-radius: 8px;
-        // background: linear-gradient(180deg, rgba(199, 199, 199, 0.336) 0%, rgba(230, 228, 229, 0.048) 100%);
-        // backdrop-filter: blur(30px);
 
         img {
             width: 250px;
