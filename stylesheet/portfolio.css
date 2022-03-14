@@ -2,7 +2,56 @@
   padding: 80px 0;
 }
 
-.portfolio .container {
+.portfolio .portfolioHeading {
+  position: relative;
+}
+
+.portfolio .portfolioHeading img {
+  position: absolute;
+  right: 310px;
+  top: 65px;
+}
+
+.portfolio .portfolioHeading h1 {
+  margin-bottom: 20px;
+}
+
+.portfolio .portfolioHeading ul {
+  list-style: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.68)), to(rgba(255, 255, 255, 0.47)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.47) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  width: 310px;
+  margin: 30px auto;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.portfolio .portfolioHeading ul li {
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.portfolio .portfolioHeading ul li a {
+  text-decoration: none;
+  padding: 08px 30px;
+  display: inline-block;
+  color: black;
+}
+
+.portfolio .portfolioHeading ul li.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 0, 136, 0.6)), to(rgba(66, 0, 200, 0.55)));
+  background: linear-gradient(180deg, rgba(137, 0, 136, 0.6) 0%, rgba(66, 0, 200, 0.55) 100%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+
+.portfolio .portfolioHeading ul li.active a {
+  color: white;
+}
+
+.portfolio .projectsGrid {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(160, 160, 160, 0.315)), to(rgba(212, 212, 212, 0.233)));
   background: linear-gradient(180deg, rgba(160, 160, 160, 0.315) 0%, rgba(212, 212, 212, 0.233) 100%);
   -webkit-backdrop-filter: blur(30px);
@@ -13,17 +62,26 @@
   padding: 40px 0;
 }
 
-.portfolio .container .row {
+.portfolio .projectsGrid .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.portfolio .container .row img {
+.portfolio .projectsGrid .row img {
   width: 100%;
 }
 
-.portfolio .container .row p {
+.portfolio .projectsGrid .row p {
   padding: 10px;
+}
+
+.portfolio .projectsGrid .row button a {
+  text-decoration: none;
+  color: black;
+}
+
+.portfolio .projectsGrid hr {
+  margin: 40px 0;
 }
 /*# sourceMappingURL=portfolio.css.map */

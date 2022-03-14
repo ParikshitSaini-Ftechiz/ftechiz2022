@@ -1,7 +1,59 @@
 .portfolio {
     padding: 80px 0;
 
-    .container {
+    .portfolioHeading {
+
+        position: relative;
+
+        img {
+            position: absolute;
+            right: 310px;
+            top: 65px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.47) 100%);
+            backdrop-filter: blur(30px);
+            width: 310px;
+            margin: 30px auto;
+            padding: 9px;
+            border-radius: 10px;
+
+            li {
+                display: inline-block;
+                border-radius: 8px;
+
+                // &:first-child {
+                //     border-right: 2px solid rgba(0, 0, 0, 0.486);
+                // }
+
+                a {
+                    text-decoration: none;
+                    padding: 08px 30px;
+                    display: inline-block;
+                    color: black;
+
+
+                }
+            }
+
+            li.active {
+                background: linear-gradient(180deg, rgba(137, 0, 136, 0.60) 0%, rgba(66, 0, 200, 0.55) 100%);
+                backdrop-filter: blur(30px);
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .projectsGrid {
         background: linear-gradient(180deg, rgba(160, 160, 160, 0.315) 0%, rgba(212, 212, 212, 0.233) 100%);
         backdrop-filter: blur(30px);
         border-radius: 8px;
@@ -19,6 +71,17 @@
             }
 
             align-items: center;
+
+            button {
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+
+        hr {
+            margin: 40px 0;
         }
     }
 }
