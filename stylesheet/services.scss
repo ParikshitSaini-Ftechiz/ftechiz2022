@@ -1,0 +1,83 @@
+header {
+    background-color: #0C0C0E;
+}
+
+.serviceSection {
+    background-color: #0C0C0E;
+    padding: 80px;
+
+    .container {
+        .row {
+            .col {
+                h1 {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .serviceBox {
+        background-image: url(../assests/softeare_service.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        margin: 40px 0;
+
+        &:hover {
+            -webkit-filter: grayscale(0%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+            transition: 0.5s;
+        }
+
+        .blurBox {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.27) 100%);
+            backdrop-filter: blur(30px);
+            margin: 10px 0 10px;
+            border-radius: 8px;
+            padding: 12px;
+
+            h2 {
+                font-weight: 700;
+                // color: white;
+                letter-spacing: 3px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    .software {
+        background-image: url('../assests/softeare_service.jpg');
+    }
+
+    .web {
+        background-image: url('../assests/webDevelopment.jpg');
+    }
+
+    .application {
+        background-image: url('../assests/application.jpg');
+    }
+
+    .erp {
+        background-image: url('../assests/erpDevelopment.jpg');
+        background-position: center;
+    }
+
+    .seo {
+        background-image: url('../assests/seoServices.jpg');
+        background-position: center;
+    }
+
+    .cloud {
+        background-image: url('../assests/cloudsServices.jpg');
+        background-position: center;
+    }
+}
