@@ -76,4 +76,10 @@ header {
   background-image: url("../assests/cloudsServices.jpg");
   background-position: center;
 }
+
+@media only screen and (max-width: 650px) {
+  .serviceSection {
+    padding: 10px;
+  }
+}
 /*# sourceMappingURL=services.css.map */

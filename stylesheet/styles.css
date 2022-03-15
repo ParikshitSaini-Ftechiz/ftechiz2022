@@ -469,5 +469,14 @@ header .navbar ul li.active {
   .footer .row .col img {
     width: 200px;
   }
+  .footer p {
+    font-size: 14px;
+  }
+  .footer ul li {
+    font-size: 14px;
+  }
+  .footer ul li a {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

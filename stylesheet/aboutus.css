@@ -192,4 +192,85 @@ header {
   opacity: 0.5;
   margin: auto;
 }
+
+@media only screen and (max-width: 650px) {
+  .about .ellipse1 {
+    position: absolute;
+    bottom: 23px;
+    left: 144px;
+    width: 50%;
+  }
+  .about .ellipse2 {
+    position: absolute;
+    top: 20px;
+    left: 170px;
+  }
+  .about .ellipse3 {
+    position: absolute;
+    right: 126px;
+  }
+  .about .row .blur-effect .text-container {
+    padding: 20px;
+    margin: 40px 0;
+  }
+  .about .row .blur-effect .text-container p {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .whyUs {
+    padding: 40px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .whyUs span {
+    font-weight: 500;
+  }
+  .whyUs .blurBoxEffect img {
+    position: absolute;
+    right: 110px;
+    bottom: -50px;
+    opacity: 0.9;
+    width: 50%;
+  }
+  .vision {
+    padding: 0 0 80px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .vision p {
+    font-weight: 500;
+  }
+  .vision ul {
+    font-weight: 300;
+  }
+  .vision .blurBoxEffect img {
+    position: absolute;
+    left: 180px;
+    top: 30px;
+    opacity: 0.9;
+    width: 50%;
+  }
+  .mission {
+    padding: 0 0 80px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mission p {
+    font-weight: 500;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .mission hr {
+    width: 50%;
+    margin: auto;
+  }
+  .order-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
 /*# sourceMappingURL=aboutus.css.map */

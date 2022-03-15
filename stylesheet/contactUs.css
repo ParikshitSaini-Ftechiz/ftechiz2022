@@ -47,4 +47,13 @@
   height: 300px;
   border-radius: 8px;
 }
+
+@media only screen and (max-width: 650px) {
+  .map {
+    padding: 40px 0;
+  }
+  .map .container {
+    padding: 10px;
+  }
+}
 /*# sourceMappingURL=contactUs.css.map */

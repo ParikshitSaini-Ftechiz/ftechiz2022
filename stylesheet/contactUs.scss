@@ -43,3 +43,13 @@
         }
     }
 }
+
+@media only screen and (max-width:650px) {
+    .map {
+        padding: 40px 0;
+
+        .container {
+            padding: 10px;
+        }
+    }
+}

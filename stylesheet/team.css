@@ -1,3 +1,7 @@
+header {
+  background-color: black;
+}
+
 .directors {
   color: white;
   padding: 80px 0;
@@ -37,5 +41,17 @@
   filter: grayscale(0%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 650px) {
+  .directors {
+    padding: 0px 0;
+  }
+  .directors img.background {
+    position: absolute;
+    top: 250px;
+    left: 180px;
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=team.css.map */

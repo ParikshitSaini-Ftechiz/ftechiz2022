@@ -176,3 +176,111 @@ header {
     }
 
 }
+
+@media only screen and (max-width:650px) {
+    .about {
+
+        .ellipse1 {
+            position: absolute;
+            bottom: 23px;
+            left: 144px;
+            width: 50%;
+        }
+
+        .ellipse2 {
+            position: absolute;
+            top: 20px;
+            left: 170px;
+        }
+
+        .ellipse3 {
+            position: absolute;
+            right: 126px;
+        }
+
+        .row {
+            .blur-effect {
+                .text-container {
+                    padding: 20px;
+                    margin: 40px 0;
+
+                    p {
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .whyUs {
+        padding: 40px 0;
+        align-items: center;
+
+        span {
+            font-weight: 500;
+        }
+
+        .blurBoxEffect {
+
+            img {
+                position: absolute;
+                right: 110px;
+                bottom: -50px;
+                opacity: 0.9;
+                width: 50%;
+            }
+
+        }
+
+    }
+
+    .vision {
+        padding: 0 0 80px 0;
+        align-items: center;
+
+        p {
+            font-weight: 500;
+        }
+
+        ul {
+            font-weight: 300;
+        }
+
+
+        .blurBoxEffect {
+
+            img {
+                position: absolute;
+                left: 180px;
+                top: 30px;
+                opacity: 0.9;
+                width: 50%;
+            }
+
+        }
+    }
+
+    .mission {
+        padding: 0 0 80px 0;
+        align-items: center;
+
+        p {
+            font-weight: 500;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        hr {
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+
+    .order-1 {
+        order: 1;
+    }
+}
